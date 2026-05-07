@@ -2,7 +2,7 @@ import json
 import math
 from collections.abc import Generator
 from dataclasses import dataclass
-from typing import Any, Optional, Union
+from typing import Any
 
 import numpy as np
 import pandas as pd
@@ -69,7 +69,7 @@ def clean_value(x: Any) -> Any:
         if isinstance(x, np.ndarray):
             # Handle special case of structured arrays or record arrays
             if x.dtype.names is not None:
-                return [dict(zip(x.dtype.names, item)) for item in x]
+                return [dict(zip(x.dtype.names, item, strict=True)) for item in x]
 
             # Convert to Python native types
             return x.tolist()
@@ -195,20 +195,20 @@ def _infer_sqlalchemy_type_from_polars_dtype(pl_dtype: Any) -> type[sa.types.Typ
 
 
 def write_dataframe_to_postgres(
-    df: Union[pd.DataFrame, pl.DataFrame],
+    df: pd.DataFrame | pl.DataFrame,
     engine: Engine,
     table_name: str,
-    dtypes: Optional[dict[str, Any]] = None,
-    sql_dtypes: Optional[dict[str, Any]] = None,
+    dtypes: dict[str, Any] | None = None,
+    sql_dtypes: dict[str, Any] | None = None,
     write_method: str = "upsert",
-    chunksize: Optional[Union[int, str]] = None,
-    index: Optional[Union[str, list[str]]] = None,
+    chunksize: int | str | None = None,
+    index: str | list[str] | None = None,
     clean_column_names: bool = False,
     case_type: str = "snake",
     truncate_limit: int = 55,
     yield_chunks: bool = False,  # If True, yields each chunk as it's written.
     progress_bar: bool = True,
-) -> Union[None, WriteResult, Generator[list[dict[str, Any]], None, Union[WriteResult, int]]]:
+) -> None | WriteResult | Generator[list[dict[str, Any]], None, WriteResult | int]:
     """
     Write a DataFrame to a PostgreSQL table with conflict resolution,
     automatic addition of missing columns, optional processing in chunks,
@@ -534,7 +534,7 @@ def write_dataframe_to_postgres(
     # --- Execute the chunks and return the final result ---
     if yield_chunks:
 
-        def _generator() -> Generator[list[dict[str, Any]], None, Union[WriteResult, int]]:
+        def _generator() -> Generator[list[dict[str, Any]], None, WriteResult | int]:
             yield from _process_chunks(True)
             return (
                 WriteResult(updated_columns_count, cleaned_columns or [])
