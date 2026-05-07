@@ -4,7 +4,7 @@ requires = [ "setuptools" ]
 
 [project]
 name = "dataframe-to-pg"
-version = "0.7.0"
+version = "0.7.1"
 description = "DataFrame to PostgreSQL Writer"
 readme = "README.md"
 license = { text = "MIT" }

@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.7.1 (2026-05-07)
+
+### Bug fixes
+
+- Remove unnecessary type ignore comment in writer.py ([`587bb15`](https://github.com/securehst/dataframe_to_pg/commit/587bb15c42316f624bf1b9dd6b87b6c9f58d299c))
+
 ## v0.7.0 (2025-04-04)
 
 ### Features
@@ -175,4 +181,4 @@
 
 ### Documentation
 
-- Add @securehst as a contributor ([`b08f1ba`](https://github.com/securehst/dataframe_to_pg/commit/b08f1bab1da9fd7a0e92a332b8cb2793eb6c2292))
+- Add @markm-io as a contributor ([`b08f1ba`](https://github.com/securehst/dataframe_to_pg/commit/b08f1bab1da9fd7a0e92a332b8cb2793eb6c2292))
