@@ -6,7 +6,7 @@ copyright_year: '2025'
 documentation: true
 email: mark@securehst.com
 full_name: Mark Moreno
-github_username: markm-io
+github_username: securehst
 has_cli: false
 initial_commit: true
 is_django_package: false

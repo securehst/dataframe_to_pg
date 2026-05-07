@@ -1,14 +1,14 @@
 # Dataframe to Postgres
 
 <p align="center">
-  <a href="https://github.com/markm-io/dataframe-to-pg/actions/workflows/ci.yml?query=branch%3Amain">
-    <img src="https://img.shields.io/github/actions/workflow/status/markm-io/dataframe-to-pg/ci.yml?branch=main&label=CI&logo=github&style=flat-square" alt="CI Status" >
+  <a href="https://github.com/securehst/dataframe_to_pg/actions/workflows/ci.yml?query=branch%3Amain">
+    <img src="https://img.shields.io/github/actions/workflow/status/securehst/dataframe_to_pg/ci.yml?branch=main&label=CI&logo=github&style=flat-square" alt="CI Status" >
   </a>
   <a href="https://dataframe-to-pg.readthedocs.io">
     <img src="https://img.shields.io/readthedocs/dataframe-to-pg.svg?logo=read-the-docs&logoColor=fff&style=flat-square" alt="Documentation Status">
   </a>
-  <a href="https://codecov.io/gh/markm-io/dataframe-to-pg">
-    <img src="https://img.shields.io/codecov/c/github/markm-io/dataframe-to-pg.svg?logo=codecov&logoColor=fff&style=flat-square" alt="Test coverage percentage">
+  <a href="https://codecov.io/gh/securehst/dataframe_to_pg">
+    <img src="https://img.shields.io/codecov/c/github/securehst/dataframe_to_pg.svg?logo=codecov&logoColor=fff&style=flat-square" alt="Test coverage percentage">
   </a>
 </p>
 <p align="center">
@@ -34,7 +34,7 @@
 
 **Documentation**: <a href="https://dataframe-to-pg.readthedocs.io" target="_blank">https://dataframe-to-pg.readthedocs.io </a>
 
-**Source Code**: <a href="https://github.com/markm-io/dataframe-to-pg" target="_blank">https://github.com/markm-io/dataframe-to-pg </a>
+**Source Code**: <a href="https://github.com/securehst/dataframe_to_pg" target="_blank">https://github.com/securehst/dataframe_to_pg </a>
 
 ---
 
@@ -57,7 +57,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/markm-io"><img src="https://avatars.githubusercontent.com/u/45011486?v=4?s=80" width="80px;" alt="Mark Moreno"/><br /><sub><b>Mark Moreno</b></sub></a><br /><a href="https://github.com/markm-io/dataframe-to-pg/commits?author=markm-io" title="Code">💻</a> <a href="#ideas-markm-io" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/markm-io/dataframe-to-pg/commits?author=markm-io" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/securehst"><img src="https://avatars.githubusercontent.com/u/45011486?v=4?s=80" width="80px;" alt="Mark Moreno"/><br /><sub><b>Mark Moreno</b></sub></a><br /><a href="https://github.com/securehst/dataframe_to_pg/commits?author=securehst" title="Code">💻</a> <a href="#ideas-securehst" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/securehst/dataframe_to_pg/commits?author=securehst" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>

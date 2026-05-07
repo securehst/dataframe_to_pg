@@ -33,10 +33,10 @@ dependencies = [
     "sqlalchemy>=2.0.37",
     "tqdm>=4.67.1",
 ]
-urls."Bug Tracker" = "https://github.com/markm-io/dataframe-to-pg/issues"
-urls.Changelog = "https://github.com/markm-io/dataframe-to-pg/blob/main/CHANGELOG.md"
+urls."Bug Tracker" = "https://github.com/securehst/dataframe_to_pg/issues"
+urls.Changelog = "https://github.com/securehst/dataframe_to_pg/blob/main/CHANGELOG.md"
 urls.documentation = "https://dataframe-to-pg.readthedocs.io"
-urls.repository = "https://github.com/markm-io/dataframe-to-pg"
+urls.repository = "https://github.com/securehst/dataframe_to_pg"
 
 [dependency-groups]
 dev = [
