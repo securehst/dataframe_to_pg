@@ -78,7 +78,7 @@ def clean_value(x: Any) -> Any:
         return [clean_value(item) for item in x]
 
     # For non-scalar, non-array objects (like dicts, custom objects, etc.)
-    try:  # type: ignore[unreachable]
+    try:
         arr = np.array(x)
         if arr.size == 0 or np.all(pd.isna(arr)):
             return None
