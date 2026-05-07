@@ -1,5 +1,7 @@
 # Changelog
 
+## v1.0.0 (2026-05-07)
+
 ## v0.7.1 (2026-05-07)
 
 ### Bug fixes
@@ -55,10 +57,6 @@
 - Clean nan and nat values in dataframe before conversion to records ([`8b2af18`](https://github.com/securehst/dataframe_to_pg/commit/8b2af18ef924148fa301d0517f1a262ba45398a1))
 
 ## v0.2.1 (2025-02-14)
-
-### Bug fixes
-
-- Use engine.begin() for ddl commands in writer.py to ensure proper transaction handling ([`021e00d`](https://github.com/securehst/dataframe_to_pg/commit/021e00dc7c317525c1b7980617b835988d1e3c80))
 
 ## v0.2.0 (2025-02-14)
 
@@ -162,7 +160,7 @@
 
 ### Features
 
-- Add yield_chunks parameter to control chunked processing of records (#4) ([`835ff2f`](https://github.com/securehst/dataframe_to_pg/commit/835ff2f7d99d001fe73aac3bdb19997fcf359001))
+- Add yield_chunks parameter to control chunked processing of records ([`835ff2f`](https://github.com/securehst/dataframe_to_pg/commit/835ff2f7d99d001fe73aac3bdb19997fcf359001))
 
 ## v0.0.2 (2025-02-01)
 
