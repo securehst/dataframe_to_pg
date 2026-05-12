@@ -12,7 +12,7 @@ ci:
 
 repos:
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v4.15.1
+    rev: v4.16.0
     hooks:
       - id: commitizen
         stages: [commit-msg]
@@ -61,7 +61,7 @@ repos:
         stages: [commit-msg]
         args: []
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v2.0.0
+    rev: v2.1.0
     hooks:
       - id: mypy
         additional_dependencies: []
