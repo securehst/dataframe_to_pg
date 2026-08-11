@@ -208,7 +208,7 @@ def write_dataframe_to_postgres(
     truncate_limit: int = 55,
     yield_chunks: bool = False,  # If True, yields each chunk as it's written.
     progress_bar: bool = True,
-) -> None | WriteResult | Generator[list[dict[str, Any]], None, WriteResult | int]:
+) -> WriteResult | Generator[list[dict[str, Any]], None, WriteResult | int] | None:
     """
     Write a DataFrame to a PostgreSQL table with conflict resolution,
     automatic addition of missing columns, optional processing in chunks,
