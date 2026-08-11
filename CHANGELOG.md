@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.0.1-rc.1 (2026-08-11)
+
+### Bug fixes
+
+- Use github.head_ref for branch name in release workflow ([`5af4681`](https://github.com/securehst/dataframe_to_pg/commit/5af4681ef3e0b41e768342110aa2f87f1e1972f9))
+- Move none to end of type union in writer.py return annotation (ruf036) ([`ea2de3e`](https://github.com/securehst/dataframe_to_pg/commit/ea2de3ec8551e9bf39b34f36a6aa047b90c311cf))
+
 ## v1.0.0 (2026-05-07)
 
 ## v0.7.1 (2026-05-07)
