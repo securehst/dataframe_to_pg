@@ -7,7 +7,9 @@
   "reviewers": ["securehst"],
   "assignees": ["securehst"],
   "assignAutomerge": true,
-  "dependencyDashboard": true,
+  "dependencyDashboard": {
+    "enabled": true
+  },
   "prHourlyLimit": 2,
   "prConcurrentLimit": 5,
   "rebaseWhen": "behind-base-branch",
